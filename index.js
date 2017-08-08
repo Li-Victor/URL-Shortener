@@ -8,9 +8,21 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', function (req, res, next) {
+	res.status(200).send('This should be the homepage');
+});
+
 app.get('/new/:URL(*)', URLController.shorten);
+app.get('/:id', URLController.redirectURL);
 
 var port = 3000;
+
+//all other Requests
+app.all('*', function (req, res, next) {
+    res.status(404).send({
+        error: 'error'
+    });
+});
 
 //connect to database, and then start up server
 massive(secret.connectionString)
