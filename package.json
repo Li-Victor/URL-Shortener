@@ -1,0 +1,23 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "A URL Shortener Microservice, that will redirect one to any link it is provided",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Li-Victor/URL-Shortener.git"
+  },
+  "author": "Victor Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Li-Victor/URL-Shortener/issues"
+  },
+  "homepage": "https://github.com/Li-Victor/URL-Shortener#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  }
+}
