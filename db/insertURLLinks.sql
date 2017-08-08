@@ -1,0 +1,1 @@
+INSERT INTO urlLinks (Link) VALUES ($1) RETURNING ID;
