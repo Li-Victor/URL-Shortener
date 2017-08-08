@@ -3,14 +3,10 @@ module.exports = {
     shorten: function (req, res, next) {
         var URL = req.params.URL;
 
-        //polyfill for String.prototype.startsWith
-        if (!String.prototype.startsWith) {
-            String.prototype.startsWith = function(searchString, position){
-              return this.substr(position || 0, searchString.length) === searchString;
-            };
-        }
+        //regex from https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url
+        var regex = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
 
-        if(URL.startsWith('http://') || URL.startsWith('https://')) {
+        if(URL.match(regex)) {
 
             var db = req.app.get('db');
             //run insertURLLinks.sql from db folder
