@@ -12,7 +12,7 @@ Made with Express.js and Heroku Postgres Datebase.
 Make sure you have signed up for a free account at [**Heroku**](https://www.heroku.com/) and the following installed:
 * NodeJS
 * [**Postgres**](https://www.postgresql.org/download/)
-* [**Heroku Client**](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) for your terminal 
+* [**Heroku Client**](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) for your terminal
 
 Click on `Create New App` button on the dashboard. Then, specify a name (or leave blank and Heroku will generate a name for you) and click `Create App`.
 
@@ -33,4 +33,4 @@ module.exports = {
 
 ```
 
-With everything setup, run `npm install` and then `node index.js`
+With everything setup, run `npm install` and then `npm start`
