@@ -14,7 +14,7 @@ module.exports = {
                 .then((arr) => {
                     return res.status(200).send({
                         original_url: URL,
-                        short_url: 'http://localhost:3000/' + arr[0].id
+                        short_url: 'https://short.glitch.me/' + arr[0].id
                     });
 
                 })

@@ -1,24 +1,30 @@
 {
   "name": "url-shortener",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A URL Shortener Microservice, that will redirect one to any link it is provided",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "dependencies": {
+    "express": "^4.15.3",
+    "massive": "^3.1.0",
+    "body-parser": "^1.17.2"
+  },
+  "engines": {
+    "node": "8.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Li-Victor/URL-Shortener.git"
   },
-  "author": "Victor Li",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Li-Victor/URL-Shortener/issues"
-  },
-  "homepage": "https://github.com/Li-Victor/URL-Shortener#readme",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.4",
-    "massive": "^3.1.0"
-  }
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "massive",
+    "postgres",
+    "heroku postgres"
+  ]
 }

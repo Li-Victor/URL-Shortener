@@ -2,7 +2,6 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var URLController = require('./URL/URLController');
 var massive = require('massive');
-var secret = require('./secret');
 
 var app = express();
 app.use(bodyParser.json());
@@ -28,7 +27,7 @@ app.all('*', function (req, res, next) {
 });
 
 //connect to database, and then start up server
-massive(secret.connectionString)
+massive(process.env.CONNECTION_STRING)
 	.then(db => {
 		app.set('db', db);
 
