@@ -6,7 +6,7 @@ If the user passes an invalid URL that doesn't follow the valid http://www.examp
 
 When the user visits the shortened URL, it will redirect them to the original link.
 
-Made with Express.js and Heroku Postgres Datebase.
+Made with Express.js and Heroku Postgres Database.
 
 ## Installation
 Make sure you have signed up for a free account at [**Heroku**](https://www.heroku.com/) and the following installed:
