@@ -30,7 +30,6 @@ Inside of secret.js:
 module.exports = {
     connectionString: YOUR URI TO DATABASE IN QUOTES + '?ssl=true'
 }
-
 ```
 
 With everything setup, run `npm install` and then `npm start`
