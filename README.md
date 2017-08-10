@@ -14,7 +14,7 @@ Make sure you have signed up for a free account at [**Heroku**](https://www.hero
 * [**Postgres**](https://www.postgresql.org/download/)
 * [**Heroku Client**](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) for your terminal
 
-Click on `Create New App` button on the dashboard. Then, specify a name (or leave blank and Heroku will generate a name for you) and click `Create App`.
+Sign in to [**Heroku**](https://id.heroku.com/login) and click on `Create New App` button on the dashboard. Then, specify a name (or leave blank and Heroku will generate a name for you) and click `Create App`.
 
 At this point, you should be in the dashboard of your project. There will either be `Resources` tab or an `icon of three horizontal lines`, depending on your window size. Click on it and you should be in the next screen.
 
